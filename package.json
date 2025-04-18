@@ -1,0 +1,45 @@
+{
+  "name": "naible-homepage",
+  "version": "1.0.0",
+  "description": "A revolutionary, conversation-first, hyper-personalized homepage experience for Naible",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "naible",
+    "conversation",
+    "ai",
+    "personalized",
+    "homepage",
+    "glassmorphism"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@types/node": "^22.14.1",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@types/uuid": "^10.0.0",
+    "autoprefixer": "^10.4.16",
+    "axios": "^1.8.4",
+    "formidable": "^3.5.2",
+    "framer-motion": "^12.7.2",
+    "next": "^15.3.0",
+    "openai": "^4.94.0",
+    "postcss": "^8.4.32",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.8.3",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/formidable": "^3.4.5"
+  }
+}

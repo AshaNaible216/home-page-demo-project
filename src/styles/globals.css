@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #4F46E5;
+  --color-light: #EEF2FF;
+  --color-dark: #312E81;
+  --color-accent: #E879F9;
+  --color-glass: rgba(79, 70, 229, 0.2);
+  --color-primary-rgb: 79, 70, 229;
+  
+  --font-family: system-ui, sans-serif;
+  --heading-font: system-ui, sans-serif;
+  --base-size: 1rem;
+  --scale: 1.2;
+}
+
+/* Dark mode variables */
+.dark {
+  --color-primary: #818CF8;
+  --color-light: #1E1B4B;
+  --color-dark: #E0E7FF;
+  --color-accent: #F0ABFC;
+  --color-glass: rgba(129, 140, 248, 0.2);
+  --color-primary-rgb: 129, 140, 248;
+}
+
+/* Glassmorphism */
+.glassmorphism {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dark .glassmorphism {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: blink 1.2s infinite;
+}
+
+/* Typewriter effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.typewriter-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end);
+}
+
+/* Site assembly animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-in-out;
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+/* Staggered animation delays */
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-delay: 0.4s;
+}
+
+.delay-5 {
+  animation-delay: 0.5s;
+}
+
+/* Transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Focus styles for accessibility */
+.focus-visible:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Dark mode specific styles */
+.dark {
+  color-scheme: dark;
+  background-color: #0F172A;
+  color: #E2E8F0;
+}
+
+.dark .bg-white {
+  background-color: #1E293B;
+}
+
+.dark .text-gray-600 {
+  color: #CBD5E1;
+}
+
+.dark .text-gray-500 {
+  color: #94A3B8;
+}
+
+.dark .border-gray-300 {
+  border-color: #475569;
+}
+
+.dark .bg-gray-200 {
+  background-color: #334155;
+}
+
+.dark .bg-gray-100 {
+  background-color: #1E293B;
+}
+
+/* Animation for fade-in */
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Magic particle effects */
+.magic-particle {
+  position: absolute;
+  background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* Glowing text effect */
+.glow-text {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+               0 0 20px rgba(255, 255, 255, 0.3),
+               0 0 30px var(--color-primary),
+               0 0 40px var(--color-primary);
+  animation: pulseGlow 4s infinite alternate;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+                 0 0 20px rgba(255, 255, 255, 0.2),
+                 0 0 30px rgba(var(--color-primary-rgb), 0.3),
+                 0 0 40px rgba(var(--color-primary-rgb), 0.2);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+                 0 0 30px rgba(255, 255, 255, 0.3),
+                 0 0 40px rgba(var(--color-primary-rgb), 0.5),
+                 0 0 50px rgba(var(--color-primary-rgb), 0.3),
+                 0 0 60px rgba(var(--color-primary-rgb), 0.2);
+  }
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}

@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /
+
+User-agent: LinkedInBot
+Allow: /share/
+
+User-agent: Twitterbot
+Allow: /share/
