@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { usePersonalization } from '../context/PersonalizationContext';
 import { motion } from 'framer-motion';
